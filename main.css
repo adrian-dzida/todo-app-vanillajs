@@ -44,7 +44,7 @@ body {
   border: none;
   outline: none;
   color: purple;
-  font-family: fantasy;
+  font-family: monospace;
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
