@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 44, 237),
+    rgb(50, 148, 187)
+  );
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 10px;
+}
+
+.app__title {
+  margin-bottom: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+}
+.form__input {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.form__btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: purple;
+  font-family: fantasy;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.form__btn:hover {
+  background-color: rgb(223, 107, 223);
+}
+
+.form__btn:active {
+  background-color: #fff;
+}
+
+.form__select {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.todolist {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.todolist__task {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  padding: 10px;
+  min-width: 250px;
+  min-height: 30px;
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.todolist__done-btn {
+  padding: 5px;
+  font-size: fantasy;
+  background-color: green;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.todolist__done-btn:hover {
+  background-color: rgb(24, 175, 57);
+}
+
+.todolist__done-btn:active {
+  background-color: white;
+}
+
+.todolist__del-btn {
+  padding: 5px;
+  font-size: fantasy;
+  background-color: red;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.todolist__del-btn:hover {
+  background-color: tomato;
+}
+
+.todolist__del-btn:active {
+  background-color: white;
+}
+
+.deactive {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateX(100%) scale(0.8);
+}
