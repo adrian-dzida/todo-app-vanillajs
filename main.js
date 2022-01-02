@@ -52,7 +52,7 @@ const render = (select) => {
     tasksList.textContent = "";
     todoList.forEach((task, key) => {
       task.dataset.key = key;
-      if (task.className === "todolist__task") {
+      if (task.className === "todolist__task deactive") {
         tasksList.append(task);
       }
     });
@@ -60,7 +60,7 @@ const render = (select) => {
     tasksList.textContent = "";
     todoList.forEach((task, key) => {
       task.dataset.key = key;
-      if (task.className == "todolist__task deactive") {
+      if (task.className == "todolist__task") {
         tasksList.append(task);
       }
     });
